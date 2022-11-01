@@ -31,7 +31,8 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
 
 **Optional Nice-to-have Stories**
 
-* Food item Search Bar 
+* Food item Search Bar
+* List of 10 recently searched items
 * Nutritions detail screen
 
 ### 2. Screen Archetypes
@@ -43,7 +44,7 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
     * Add button to add an item to logs
 * Logs Screen
     * Display Scrollable list of items added by a user
-    * Calories total is calculated and added at the top of the screen
+    * Calories total is calculated and added at the bottom of the screen (sticky ribbon)
 
 ### 3. Navigation
 
@@ -55,10 +56,10 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
 **Flow Navigation** (Screen to Screen)
 
 * Login Page
-   => Home page (main page with calculator)
+   => Home page (main page with list of items)
 * Main Page
-   => Logs page
-   => Back to login if needed
+   => Logs page (Selected items with calculator at the bottom)
+   => Back to login by tapping Home on tab navigation
 * Logs page
    => Main page (if needed to return)
    
