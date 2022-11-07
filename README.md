@@ -85,6 +85,28 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
 
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+   - Login Screen
+      - (Read/GET) Query user registered user(s) to login
+        ```swift
+        let username = usernameField.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }else{
+                print("Error: \(error)")
+                }
+            }
+        }
+         ```
+     - (Create/POST) Create a new user profile.
+   - Main Food items screen
+      - (Read/GET) Query 20 food items from API
+      - (Update/PUT) Update new food items.
+   - Logs Screen
+      - (Create/POST) Create a new items to logs
+      - (Create/POST) Create a new calculate calories.
+      - (Update/PUT) Update food items in logs
+      - (Update/PUT) Update the calories calculation.
+      - (Delete) Delete food items.
