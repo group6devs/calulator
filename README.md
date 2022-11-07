@@ -79,7 +79,7 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
 | :---         |     :---:      |          :--- |
 | calories     | Number   | total calories in kcal returning in decimal                          |
 | food_id      | String  | food chosen                    | 
-| serving_id.  | Number  | food chosen serving            |
+| serving_id  | Number  | food chosen serving size          |
 | food_entry_id| String  | food chosen data entry         |
 | food_type    | String  | the type of food in database   |
 
