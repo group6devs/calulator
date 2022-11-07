@@ -72,9 +72,18 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
+
 ### Models
-[Add table of models]
+| Property     | Type    | Description                    |
+| :---         |     :---:      |          :--- |
+| calories     | Number   | total calories in kcal returning in decimal                          |
+| food_id      | String  | food chosen                    | 
+| serving_id.  | Number  | food chosen serving            |
+| food_entry_id| String  | food chosen data entry         |
+| food_type    | String  | the type of food in database   |
+
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
