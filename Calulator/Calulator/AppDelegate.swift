@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
+        
         let parseConfig = ParseClientConfiguration {
                     $0.applicationId = "JsqqdShpG8SoIu3VCJSXRmXEVnoQmGpzZ5ksuVd1" // <- UPDATE
                     $0.clientKey = "t1Prr9wMW1JnBxe3BRBVEtWrEPIeJVk4O1kZi15F" // <- UPDATE
@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Parse.initialize(with: parseConfig)
         return true
     }
-    
 
     // MARK: UISceneSession Lifecycle
 
