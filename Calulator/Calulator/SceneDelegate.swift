@@ -7,8 +7,11 @@
 
 import UIKit
 import Parse
+import FatSecretSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    
+    
 
     var window: UIWindow?
 

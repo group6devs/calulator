@@ -25,15 +25,19 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
 
 **Required Must-have Stories**
 
-* User shall be able to login and logout
-* Main screen with 20 food items
-* Screen with added items with calculated total consumed calories
+[x] User shall be able to login
+[x] User shall be able to register
+[x] Login Screen UI
+[x] Home Screen UI
+[] Home screen with 20 food items
+[] Logs Screen UI
+[] Screen with added items with calculated total consumed calories
 
 **Optional Nice-to-have Stories**
 
-* Food item Search Bar
-* List of 10 recently searched items
-* Nutritions detail screen
+[] Food item Search Bar
+[] List of 10 recently searched items
+[] Nutritions detail screen
 
 ### 2. Screen Archetypes
 

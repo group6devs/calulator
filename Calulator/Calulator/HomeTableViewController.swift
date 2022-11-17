@@ -7,15 +7,26 @@
 
 import UIKit
 import Parse
+import FatSecretSwift
 
 class HomeTableViewController: UITableViewController {
+    
+    
+    let fatSecretClient = FatSecretClient()
+    //var food = [[String:Any]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        print("***********")
+        fatSecretClient.getFood(id: "4384") { food in
+            print(food)
+        }
+        print("***********")
     }
 
     // MARK: - Table view data source
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath)
