@@ -2,15 +2,13 @@
 //  HomeViewController.swift
 //  Calulator
 //
-//  Created by Dunyagozel Durdyyeva on 11/8/22.
+//  Created by Dunyagozel Durdyyeva on 11/16/22.
 //
 
 import UIKit
 
 class HomeViewController: UIViewController {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

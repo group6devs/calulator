@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		035B0B672924A07F0041A023 /* HomeViewControllerCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035B0B662924A07F0041A023 /* HomeViewControllerCells.swift */; };
 		2B557310A0C05F0B879E46A4 /* Pods_Calulator_CalulatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB91F2FBDDF0096CF0443B88 /* Pods_Calulator_CalulatorUITests.framework */; };
 		852875C0CD6DA48C89DDCDAC /* Pods_CalulatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1721FD02DBAE0CCBC56F92B /* Pods_CalulatorTests.framework */; };
 		DADBF5FAC8E90A9EC50A845A /* Pods_Calulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77A2A8803311A364161C23F /* Pods_Calulator.framework */; };
@@ -20,7 +19,8 @@
 		EA0F46B5291B59D200922B4E /* CalulatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46B4291B59D200922B4E /* CalulatorUITests.swift */; };
 		EA0F46B7291B59D200922B4E /* CalulatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */; };
 		EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */; };
-		EA0F46C6291B5DA700922B4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46C5291B5DA700922B4E /* HomeViewController.swift */; };
+		EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */; };
+		EAC3A1172925C54000BB1113 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A1162925C54000BB1113 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		035B0B662924A07F0041A023 /* HomeViewControllerCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerCells.swift; sourceTree = "<group>"; };
 		162DB77363C17735377181B3 /* Pods-Calulator-CalulatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator-CalulatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Calulator-CalulatorUITests/Pods-Calulator-CalulatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B888E4243A28E90A840757F /* Pods-CalulatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalulatorTests.debug.xcconfig"; path = "Target Support Files/Pods-CalulatorTests/Pods-CalulatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB91F2FBDDF0096CF0443B88 /* Pods_Calulator_CalulatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calulator_CalulatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +62,8 @@
 		EA0F46B4291B59D200922B4E /* CalulatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorUITests.swift; sourceTree = "<group>"; };
 		EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		EA0F46C5291B5DA700922B4E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		EAC3A1162925C54000BB1113 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F5986418B96BEDCACDF9ED4A /* Pods-Calulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator.release.xcconfig"; path = "Target Support Files/Pods-Calulator/Pods-Calulator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,8 +150,8 @@
 				EA0F469E291B59D200922B4E /* LaunchScreen.storyboard */,
 				EA0F46A1291B59D200922B4E /* Info.plist */,
 				EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */,
-				EA0F46C5291B5DA700922B4E /* HomeViewController.swift */,
-				035B0B662924A07F0041A023 /* HomeViewControllerCells.swift */,
+				EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */,
+				EAC3A1162925C54000BB1113 /* HomeViewController.swift */,
 			);
 			path = Calulator;
 			sourceTree = "<group>";
@@ -412,11 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC3A1172925C54000BB1113 /* HomeViewController.swift in Sources */,
+				EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */,
 				EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */,
 				EA0F4694291B59D100922B4E /* AppDelegate.swift in Sources */,
 				EA0F4696291B59D100922B4E /* SceneDelegate.swift in Sources */,
-				035B0B672924A07F0041A023 /* HomeViewControllerCells.swift in Sources */,
-				EA0F46C6291B5DA700922B4E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
