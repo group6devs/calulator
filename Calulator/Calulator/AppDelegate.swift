@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     enum Constants {
             static let apiKey = "0cfbab0d92bb4a25a9e9a6fa6592a547"
-            static let apiSecret = "b131862ba8644fd291258b619b0418e5Hours "
+            static let apiSecret = "b131862ba8644fd291258b619b0418e5"
         }
 
     var window: UIWindow?
