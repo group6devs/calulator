@@ -20,7 +20,6 @@
 		EA0F46B7291B59D200922B4E /* CalulatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */; };
 		EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */; };
 		EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */; };
-		EAC3A1172925C54000BB1113 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A1162925C54000BB1113 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +62,8 @@
 		EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		EAC3A1162925C54000BB1113 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EAE6ED1D2925E94400F113CA /* FatSecretSwift-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "FatSecretSwift-master"; sourceTree = "<group>"; };
+		EAE6ED1E2925E9B300F113CA /* FatSecretSwift-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "FatSecretSwift-master"; sourceTree = "<group>"; };
 		F5986418B96BEDCACDF9ED4A /* Pods-Calulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator.release.xcconfig"; path = "Target Support Files/Pods-Calulator/Pods-Calulator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +121,7 @@
 		EA0F4687291B59D100922B4E = {
 			isa = PBXGroup;
 			children = (
+				EAE6ED1C2925E94400F113CA /* Packages */,
 				EA0F4692291B59D100922B4E /* Calulator */,
 				EA0F46A9291B59D200922B4E /* CalulatorTests */,
 				EA0F46B3291B59D200922B4E /* CalulatorUITests */,
@@ -151,7 +152,6 @@
 				EA0F46A1291B59D200922B4E /* Info.plist */,
 				EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */,
 				EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */,
-				EAC3A1162925C54000BB1113 /* HomeViewController.swift */,
 			);
 			path = Calulator;
 			sourceTree = "<group>";
@@ -173,6 +173,15 @@
 			path = CalulatorUITests;
 			sourceTree = "<group>";
 		};
+		EAE6ED1C2925E94400F113CA /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				EAE6ED1D2925E94400F113CA /* FatSecretSwift-master */,
+				EAE6ED1E2925E9B300F113CA /* FatSecretSwift-master */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,6 +200,8 @@
 			dependencies = (
 			);
 			name = Calulator;
+			packageProductDependencies = (
+			);
 			productName = Calulator;
 			productReference = EA0F4690291B59D100922B4E /* Calulator.app */;
 			productType = "com.apple.product-type.application";
@@ -266,6 +277,8 @@
 				Base,
 			);
 			mainGroup = EA0F4687291B59D100922B4E;
+			packageReferences = (
+			);
 			productRefGroup = EA0F4691291B59D100922B4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -412,7 +425,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC3A1172925C54000BB1113 /* HomeViewController.swift in Sources */,
 				EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */,
 				EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */,
 				EA0F4694291B59D100922B4E /* AppDelegate.swift in Sources */,

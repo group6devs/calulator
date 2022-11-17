@@ -7,9 +7,15 @@
 
 import UIKit
 import Parse
+import FatSecretSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    enum Constants {
+            static let apiKey = "0cfbab0d92bb4a25a9e9a6fa6592a547"
+            static let apiSecret = "b131862ba8644fd291258b619b0418e5Hours "
+        }
 
     var window: UIWindow?
 
@@ -23,8 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             Parse.initialize(with: parseConfig)
         
+        FatSecretCredentials.setConsumerKey(Constants.apiKey)
+        FatSecretCredentials.setSharedSecret(Constants.apiSecret)
+        
         
         return true
+        
+    
     }
 
     // MARK: UISceneSession Lifecycle
