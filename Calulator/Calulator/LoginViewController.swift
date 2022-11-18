@@ -16,10 +16,22 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initializeHideKeyboard()
 
         // Do any additional setup after loading the view.
     }
+    
+     func initializeHideKeyboard(){
+     let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+     target: self,
+     action: #selector(dismissMyKeyboard))
+     view.addGestureRecognizer(tap)
+     }
+    
+     @objc func dismissMyKeyboard(){
+     view.endEditing(true)
+     }
+
     
     @IBAction func onLogin(_ sender: Any) {
         let username = usernameField.text!

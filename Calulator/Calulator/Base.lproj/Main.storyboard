@@ -176,11 +176,11 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLogoutButton:" destination="IAM-ke-weo" eventType="touchUpInside" id="adb-z5-JHq"/>
+                                </connections>
                             </button>
                             <color key="tintColor" systemColor="linkColor"/>
-                            <connections>
-                                <action selector="onLogoutButton:" destination="IAM-ke-weo" id="wdU-aR-jXJ"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
