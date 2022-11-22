@@ -20,6 +20,7 @@
 		EA0F46B7291B59D200922B4E /* CalulatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */; };
 		EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */; };
 		EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */; };
+		EAE6ED25292C585D00F113CA /* LogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6ED24292C585D00F113CA /* LogsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		EAE6ED1D2925E94400F113CA /* FatSecretSwift-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "FatSecretSwift-master"; sourceTree = "<group>"; };
 		EAE6ED1E2925E9B300F113CA /* FatSecretSwift-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "FatSecretSwift-master"; sourceTree = "<group>"; };
+		EAE6ED24292C585D00F113CA /* LogsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsTableViewController.swift; sourceTree = "<group>"; };
 		F5986418B96BEDCACDF9ED4A /* Pods-Calulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator.release.xcconfig"; path = "Target Support Files/Pods-Calulator/Pods-Calulator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				EA0F46A1291B59D200922B4E /* Info.plist */,
 				EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */,
 				EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */,
+				EAE6ED24292C585D00F113CA /* LogsTableViewController.swift */,
 			);
 			path = Calulator;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */,
 				EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */,
 				EA0F4694291B59D100922B4E /* AppDelegate.swift in Sources */,
+				EAE6ED25292C585D00F113CA /* LogsTableViewController.swift in Sources */,
 				EA0F4696291B59D100922B4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
