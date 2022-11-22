@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B557310A0C05F0B879E46A4 /* Pods_Calulator_CalulatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB91F2FBDDF0096CF0443B88 /* Pods_Calulator_CalulatorUITests.framework */; };
+		852875C0CD6DA48C89DDCDAC /* Pods_CalulatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1721FD02DBAE0CCBC56F92B /* Pods_CalulatorTests.framework */; };
+		DADBF5FAC8E90A9EC50A845A /* Pods_Calulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77A2A8803311A364161C23F /* Pods_Calulator.framework */; };
+		EA0F4694291B59D100922B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F4693291B59D100922B4E /* AppDelegate.swift */; };
+		EA0F4696291B59D100922B4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F4695291B59D100922B4E /* SceneDelegate.swift */; };
+		EA0F469B291B59D100922B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0F4699291B59D100922B4E /* Main.storyboard */; };
+		EA0F469D291B59D200922B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0F469C291B59D200922B4E /* Assets.xcassets */; };
+		EA0F46A0291B59D200922B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0F469E291B59D200922B4E /* LaunchScreen.storyboard */; };
+		EA0F46AB291B59D200922B4E /* CalulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46AA291B59D200922B4E /* CalulatorTests.swift */; };
+		EA0F46B5291B59D200922B4E /* CalulatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46B4291B59D200922B4E /* CalulatorUITests.swift */; };
+		EA0F46B7291B59D200922B4E /* CalulatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */; };
+		EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */; };
+		EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */; };
+		EAE6ED25292C585D00F113CA /* LogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6ED24292C585D00F113CA /* LogsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA0F46A7291B59D200922B4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA0F4688291B59D100922B4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA0F468F291B59D100922B4E;
+			remoteInfo = Calulator;
+		};
+		EA0F46B1291B59D200922B4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA0F4688291B59D100922B4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA0F468F291B59D100922B4E;
+			remoteInfo = Calulator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		162DB77363C17735377181B3 /* Pods-Calulator-CalulatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator-CalulatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Calulator-CalulatorUITests/Pods-Calulator-CalulatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B888E4243A28E90A840757F /* Pods-CalulatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalulatorTests.debug.xcconfig"; path = "Target Support Files/Pods-CalulatorTests/Pods-CalulatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB91F2FBDDF0096CF0443B88 /* Pods_Calulator_CalulatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calulator_CalulatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC4CE832696DCDCED94D5F2 /* Pods-Calulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator.debug.xcconfig"; path = "Target Support Files/Pods-Calulator/Pods-Calulator.debug.xcconfig"; sourceTree = "<group>"; };
+		CFAC9302748F028693F4686B /* Pods-Calulator-CalulatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator-CalulatorUITests.release.xcconfig"; path = "Target Support Files/Pods-Calulator-CalulatorUITests/Pods-Calulator-CalulatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D77A2A8803311A364161C23F /* Pods_Calulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1721FD02DBAE0CCBC56F92B /* Pods_CalulatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalulatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92AFA2A5C295E3472847DA7 /* Pods-CalulatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalulatorTests.release.xcconfig"; path = "Target Support Files/Pods-CalulatorTests/Pods-CalulatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA0F4690291B59D100922B4E /* Calulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0F4693291B59D100922B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA0F4695291B59D100922B4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA0F469A291B59D100922B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA0F469C291B59D200922B4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA0F469F291B59D200922B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA0F46A1291B59D200922B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA0F46A6291B59D200922B4E /* CalulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0F46AA291B59D200922B4E /* CalulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorTests.swift; sourceTree = "<group>"; };
+		EA0F46B0291B59D200922B4E /* CalulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0F46B4291B59D200922B4E /* CalulatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorUITests.swift; sourceTree = "<group>"; };
+		EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		EAE6ED1D2925E94400F113CA /* FatSecretSwift-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "FatSecretSwift-master"; sourceTree = "<group>"; };
+		EAE6ED1E2925E9B300F113CA /* FatSecretSwift-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "FatSecretSwift-master"; sourceTree = "<group>"; };
+		EAE6ED24292C585D00F113CA /* LogsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsTableViewController.swift; sourceTree = "<group>"; };
+		F5986418B96BEDCACDF9ED4A /* Pods-Calulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator.release.xcconfig"; path = "Target Support Files/Pods-Calulator/Pods-Calulator.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA0F468D291B59D100922B4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBF5FAC8E90A9EC50A845A /* Pods_Calulator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0F46A3291B59D200922B4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852875C0CD6DA48C89DDCDAC /* Pods_CalulatorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0F46AD291B59D200922B4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B557310A0C05F0B879E46A4 /* Pods_Calulator_CalulatorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B04EAD98E237F0CE95957B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D77A2A8803311A364161C23F /* Pods_Calulator.framework */,
+				AB91F2FBDDF0096CF0443B88 /* Pods_Calulator_CalulatorUITests.framework */,
+				E1721FD02DBAE0CCBC56F92B /* Pods_CalulatorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8714B08BD53546849C15E466 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4CE832696DCDCED94D5F2 /* Pods-Calulator.debug.xcconfig */,
+				F5986418B96BEDCACDF9ED4A /* Pods-Calulator.release.xcconfig */,
+				162DB77363C17735377181B3 /* Pods-Calulator-CalulatorUITests.debug.xcconfig */,
+				CFAC9302748F028693F4686B /* Pods-Calulator-CalulatorUITests.release.xcconfig */,
+				3B888E4243A28E90A840757F /* Pods-CalulatorTests.debug.xcconfig */,
+				E92AFA2A5C295E3472847DA7 /* Pods-CalulatorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA0F4687291B59D100922B4E = {
+			isa = PBXGroup;
+			children = (
+				EAE6ED1C2925E94400F113CA /* Packages */,
+				EA0F4692291B59D100922B4E /* Calulator */,
+				EA0F46A9291B59D200922B4E /* CalulatorTests */,
+				EA0F46B3291B59D200922B4E /* CalulatorUITests */,
+				EA0F4691291B59D100922B4E /* Products */,
+				8714B08BD53546849C15E466 /* Pods */,
+				3B04EAD98E237F0CE95957B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA0F4691291B59D100922B4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA0F4690291B59D100922B4E /* Calulator.app */,
+				EA0F46A6291B59D200922B4E /* CalulatorTests.xctest */,
+				EA0F46B0291B59D200922B4E /* CalulatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA0F4692291B59D100922B4E /* Calulator */ = {
+			isa = PBXGroup;
+			children = (
+				EA0F4693291B59D100922B4E /* AppDelegate.swift */,
+				EA0F4695291B59D100922B4E /* SceneDelegate.swift */,
+				EA0F4699291B59D100922B4E /* Main.storyboard */,
+				EA0F469C291B59D200922B4E /* Assets.xcassets */,
+				EA0F469E291B59D200922B4E /* LaunchScreen.storyboard */,
+				EA0F46A1291B59D200922B4E /* Info.plist */,
+				EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */,
+				EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */,
+				EAE6ED24292C585D00F113CA /* LogsTableViewController.swift */,
+			);
+			path = Calulator;
+			sourceTree = "<group>";
+		};
+		EA0F46A9291B59D200922B4E /* CalulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA0F46AA291B59D200922B4E /* CalulatorTests.swift */,
+			);
+			path = CalulatorTests;
+			sourceTree = "<group>";
+		};
+		EA0F46B3291B59D200922B4E /* CalulatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA0F46B4291B59D200922B4E /* CalulatorUITests.swift */,
+				EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */,
+			);
+			path = CalulatorUITests;
+			sourceTree = "<group>";
+		};
+		EAE6ED1C2925E94400F113CA /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				EAE6ED1D2925E94400F113CA /* FatSecretSwift-master */,
+				EAE6ED1E2925E9B300F113CA /* FatSecretSwift-master */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA0F468F291B59D100922B4E /* Calulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0F46BA291B59D200922B4E /* Build configuration list for PBXNativeTarget "Calulator" */;
+			buildPhases = (
+				65A7F321EECAC5D484B73BBA /* [CP] Check Pods Manifest.lock */,
+				EA0F468C291B59D100922B4E /* Sources */,
+				EA0F468D291B59D100922B4E /* Frameworks */,
+				EA0F468E291B59D100922B4E /* Resources */,
+				4A98ACCF142E15C7DA8E615A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calulator;
+			packageProductDependencies = (
+			);
+			productName = Calulator;
+			productReference = EA0F4690291B59D100922B4E /* Calulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA0F46A5291B59D200922B4E /* CalulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0F46BD291B59D200922B4E /* Build configuration list for PBXNativeTarget "CalulatorTests" */;
+			buildPhases = (
+				540FCBD3B2FFA4CFC26AAEA5 /* [CP] Check Pods Manifest.lock */,
+				EA0F46A2291B59D200922B4E /* Sources */,
+				EA0F46A3291B59D200922B4E /* Frameworks */,
+				EA0F46A4291B59D200922B4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA0F46A8291B59D200922B4E /* PBXTargetDependency */,
+			);
+			name = CalulatorTests;
+			productName = CalulatorTests;
+			productReference = EA0F46A6291B59D200922B4E /* CalulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA0F46AF291B59D200922B4E /* CalulatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0F46C0291B59D200922B4E /* Build configuration list for PBXNativeTarget "CalulatorUITests" */;
+			buildPhases = (
+				C6E909A68FFD188660BB04AB /* [CP] Check Pods Manifest.lock */,
+				EA0F46AC291B59D200922B4E /* Sources */,
+				EA0F46AD291B59D200922B4E /* Frameworks */,
+				EA0F46AE291B59D200922B4E /* Resources */,
+				EDE10D17BEEDF92BB31E6507 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA0F46B2291B59D200922B4E /* PBXTargetDependency */,
+			);
+			name = CalulatorUITests;
+			productName = CalulatorUITests;
+			productReference = EA0F46B0291B59D200922B4E /* CalulatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA0F4688291B59D100922B4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					EA0F468F291B59D100922B4E = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					EA0F46A5291B59D200922B4E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = EA0F468F291B59D100922B4E;
+					};
+					EA0F46AF291B59D200922B4E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = EA0F468F291B59D100922B4E;
+					};
+				};
+			};
+			buildConfigurationList = EA0F468B291B59D100922B4E /* Build configuration list for PBXProject "Calulator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA0F4687291B59D100922B4E;
+			packageReferences = (
+			);
+			productRefGroup = EA0F4691291B59D100922B4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA0F468F291B59D100922B4E /* Calulator */,
+				EA0F46A5291B59D200922B4E /* CalulatorTests */,
+				EA0F46AF291B59D200922B4E /* CalulatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA0F468E291B59D100922B4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0F46A0291B59D200922B4E /* LaunchScreen.storyboard in Resources */,
+				EA0F469D291B59D200922B4E /* Assets.xcassets in Resources */,
+				EA0F469B291B59D100922B4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0F46A4291B59D200922B4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0F46AE291B59D200922B4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A98ACCF142E15C7DA8E615A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calulator/Pods-Calulator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calulator/Pods-Calulator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calulator/Pods-Calulator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		540FCBD3B2FFA4CFC26AAEA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalulatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65A7F321EECAC5D484B73BBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Calulator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E909A68FFD188660BB04AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Calulator-CalulatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE10D17BEEDF92BB31E6507 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calulator-CalulatorUITests/Pods-Calulator-CalulatorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calulator-CalulatorUITests/Pods-Calulator-CalulatorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calulator-CalulatorUITests/Pods-Calulator-CalulatorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA0F468C291B59D100922B4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */,
+				EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */,
+				EA0F4694291B59D100922B4E /* AppDelegate.swift in Sources */,
+				EAE6ED25292C585D00F113CA /* LogsTableViewController.swift in Sources */,
+				EA0F4696291B59D100922B4E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0F46A2291B59D200922B4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0F46AB291B59D200922B4E /* CalulatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0F46AC291B59D200922B4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0F46B7291B59D200922B4E /* CalulatorUITestsLaunchTests.swift in Sources */,
+				EA0F46B5291B59D200922B4E /* CalulatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA0F46A8291B59D200922B4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA0F468F291B59D100922B4E /* Calulator */;
+			targetProxy = EA0F46A7291B59D200922B4E /* PBXContainerItemProxy */;
+		};
+		EA0F46B2291B59D200922B4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA0F468F291B59D100922B4E /* Calulator */;
+			targetProxy = EA0F46B1291B59D200922B4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA0F4699291B59D100922B4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA0F469A291B59D100922B4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA0F469E291B59D200922B4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA0F469F291B59D200922B4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA0F46B8291B59D200922B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA0F46B9291B59D200922B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA0F46BB291B59D200922B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCC4CE832696DCDCED94D5F2 /* Pods-Calulator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZ7LY899ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Calulator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddurdyeva6.Calulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA0F46BC291B59D200922B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5986418B96BEDCACDF9ED4A /* Pods-Calulator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZ7LY899ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Calulator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddurdyeva6.Calulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA0F46BE291B59D200922B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B888E4243A28E90A840757F /* Pods-CalulatorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZ7LY899ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddurdyeva6.CalulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calulator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Calulator";
+			};
+			name = Debug;
+		};
+		EA0F46BF291B59D200922B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92AFA2A5C295E3472847DA7 /* Pods-CalulatorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZ7LY899ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddurdyeva6.CalulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calulator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Calulator";
+			};
+			name = Release;
+		};
+		EA0F46C1291B59D200922B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162DB77363C17735377181B3 /* Pods-Calulator-CalulatorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZ7LY899ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddurdyeva6.CalulatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Calulator;
+			};
+			name = Debug;
+		};
+		EA0F46C2291B59D200922B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFAC9302748F028693F4686B /* Pods-Calulator-CalulatorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZ7LY899ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddurdyeva6.CalulatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Calulator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA0F468B291B59D100922B4E /* Build configuration list for PBXProject "Calulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0F46B8291B59D200922B4E /* Debug */,
+				EA0F46B9291B59D200922B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0F46BA291B59D200922B4E /* Build configuration list for PBXNativeTarget "Calulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0F46BB291B59D200922B4E /* Debug */,
+				EA0F46BC291B59D200922B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0F46BD291B59D200922B4E /* Build configuration list for PBXNativeTarget "CalulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0F46BE291B59D200922B4E /* Debug */,
+				EA0F46BF291B59D200922B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0F46C0291B59D200922B4E /* Build configuration list for PBXNativeTarget "CalulatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0F46C1291B59D200922B4E /* Debug */,
+				EA0F46C2291B59D200922B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA0F4688291B59D100922B4E /* Project object */;
+}
