@@ -30,10 +30,10 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
 - [x] User shall be able to stay logged in
 - [x] Login Screen UI
 - [x] Home Screen UI
-- [ ] User shall be able to logout
-- [ ] Home screen with 20 food items
-- [ ] Logs Screen UI
-- [ ] Screen with added items with calculated total consumed calories
+- [x] User shall be able to logout
+- [x] Home screen with 20 food items
+- [x] Logs Screen UI
+- [x] Screen with added items with calculated total consumed calories
 
 **Optional Nice-to-have Stories**
 
@@ -116,3 +116,10 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
       - (Update/PUT) Update food items in logs
       - (Update/PUT) Update the calories calculation.
       - (Delete) Delete food items.
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+* Sprint 2
+
+<img src='https://media.giphy.com/media/mLC0dZBv0BR9zRe6CT/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
