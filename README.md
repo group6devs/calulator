@@ -33,7 +33,11 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
 - [x] User shall be able to logout
 - [x] Home screen with 20 food items
 - [x] Logs Screen UI
-- [x] Screen with added items with calculated total consumed calories
+- [x] App icon
+- [x] Tab navigation (Home screen | Logs screen)
+- [ ] Display api retrieved items 
+- [ ] Add button functionality
+- [ ] Total consumed calories calculation functionality
 
 **Optional Nice-to-have Stories**
 
