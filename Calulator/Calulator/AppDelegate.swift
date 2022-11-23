@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FatSecretCredentials.setSharedSecret(Constants.apiSecret)
         
         
+        
         return true
         
     

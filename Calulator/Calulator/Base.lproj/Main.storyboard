@@ -106,9 +106,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cucumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTo-Wd-fmX">
-                                            <rect key="frame" x="25" y="16" width="110" height="47"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cucumber" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTo-Wd-fmX">
+                                            <rect key="frame" x="25" y="16" width="75" height="47"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -142,6 +142,7 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.82745098039215681" green="0.8784313725490196" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="HZ7-m3-Bdt" secondAttribute="trailing" constant="10" id="4Q5-9Z-Jft"/>
                                         <constraint firstItem="eTo-Wd-fmX" firstAttribute="top" secondItem="Xqx-Tf-tbs" secondAttribute="topMargin" constant="5" id="7b7-aO-Sah"/>
                                         <constraint firstItem="yFq-mU-PQH" firstAttribute="top" secondItem="Xqx-Tf-tbs" secondAttribute="topMargin" constant="17" id="Bt5-qX-dKQ"/>
                                         <constraint firstItem="HZ7-m3-Bdt" firstAttribute="leading" secondItem="yFq-mU-PQH" secondAttribute="trailing" constant="15" id="F8Q-1S-InP"/>
@@ -152,7 +153,6 @@
                                         <constraint firstItem="eTo-Wd-fmX" firstAttribute="top" secondItem="Xqx-Tf-tbs" secondAttribute="topMargin" constant="5" id="Rm1-LV-hiV"/>
                                         <constraint firstItem="yFq-mU-PQH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eTo-Wd-fmX" secondAttribute="trailing" constant="5" id="YVh-AN-onV"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="eTo-Wd-fmX" secondAttribute="bottom" constant="5" id="ZKD-cm-vJR"/>
-                                        <constraint firstItem="HZ7-m3-Bdt" firstAttribute="leading" secondItem="yFq-mU-PQH" secondAttribute="trailing" constant="15" id="ZMy-4r-gS2"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="HZ7-m3-Bdt" secondAttribute="bottom" constant="10" id="gix-Dj-3Ls"/>
                                         <constraint firstItem="HZ7-m3-Bdt" firstAttribute="top" secondItem="Xqx-Tf-tbs" secondAttribute="topMargin" constant="10" id="mFy-oY-szV"/>
                                         <constraint firstItem="eTo-Wd-fmX" firstAttribute="leading" secondItem="Xqx-Tf-tbs" secondAttribute="leadingMargin" constant="5" id="om8-UY-35P"/>
