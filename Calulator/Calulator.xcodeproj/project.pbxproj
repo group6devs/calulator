@@ -19,6 +19,7 @@
 		EA0F46B5291B59D200922B4E /* CalulatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46B4291B59D200922B4E /* CalulatorUITests.swift */; };
 		EA0F46B7291B59D200922B4E /* CalulatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */; };
 		EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */; };
+		EA15ED22292C7C1400391490 /* FoodCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA15ED21292C7C1400391490 /* FoodCellTableViewCell.swift */; };
 		EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */; };
 		EAE6ED25292C585D00F113CA /* LogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6ED24292C585D00F113CA /* LogsTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		EA0F46B4291B59D200922B4E /* CalulatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorUITests.swift; sourceTree = "<group>"; };
 		EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EA15ED21292C7C1400391490 /* FoodCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCellTableViewCell.swift; sourceTree = "<group>"; };
 		EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		EAE6ED1D2925E94400F113CA /* FatSecretSwift-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "FatSecretSwift-master"; sourceTree = "<group>"; };
 		EAE6ED1E2925E9B300F113CA /* FatSecretSwift-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "FatSecretSwift-master"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */,
 				EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */,
 				EAE6ED24292C585D00F113CA /* LogsTableViewController.swift */,
+				EA15ED21292C7C1400391490 /* FoodCellTableViewCell.swift */,
 			);
 			path = Calulator;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */,
+				EA15ED22292C7C1400391490 /* FoodCellTableViewCell.swift in Sources */,
 				EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */,
 				EA0F4694291B59D100922B4E /* AppDelegate.swift in Sources */,
 				EAE6ED25292C585D00F113CA /* LogsTableViewController.swift in Sources */,

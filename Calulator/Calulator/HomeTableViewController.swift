@@ -11,25 +11,48 @@ import FatSecretSwift
 
 class HomeTableViewController: UITableViewController {
     
+    var foodArray = [NSDictionary]()
+    
+    var numberOfFood: Int!
+    
+    let searchController = UISearchController()
     
     let fatSecretClient = FatSecretClient()
     //var food = [[String:Any]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.searchController = searchController
+        
+        loadFood()
+        
 
-        print("***********")
-        fatSecretClient.getFood(id: "4384") { food in
-            print(food)
-        }
-        print("***********")
+
     }
 
     // MARK: - Table view data source
+   
+    @objc func loadFood() {
+        fatSecretClient.searchFood(name: "Hotdog") { search in
+            for food in search.foods {
+                //self.foodArray.append(["name" : food.name, "calories" : food.description])
+                self.foodArray.append(["name" : food.name, "calories" : food.description])
+                print(self.foodArray)
+            }
+          
+        }
+        //self.tableView.reloadData()
+        print(self.foodArray.count)
+    }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath) as! FoodCellTableViewCell
+        
+        cell.foodName.text = (foodArray[indexPath.row]["name"] as? String)
+        cell.calories.text = "123 kcal"
+        
         return cell
     }
 
@@ -40,7 +63,7 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 20
+        return foodArray.count
     }
 
 

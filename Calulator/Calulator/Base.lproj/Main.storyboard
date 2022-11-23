@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" rowHeight="79" id="x4N-cL-big">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" rowHeight="79" id="x4N-cL-big" customClass="FoodCellTableViewCell" customModule="Calulator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="79"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x4N-cL-big" id="Xqx-Tf-tbs">
@@ -158,6 +158,11 @@
                                         <constraint firstItem="eTo-Wd-fmX" firstAttribute="leading" secondItem="Xqx-Tf-tbs" secondAttribute="leadingMargin" constant="5" id="om8-UY-35P"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addFoodButton" destination="HZ7-m3-Bdt" id="wo3-Uy-3cw"/>
+                                    <outlet property="calories" destination="yFq-mU-PQH" id="uVX-WO-Eud"/>
+                                    <outlet property="foodName" destination="eTo-Wd-fmX" id="ZBQ-FJ-vz7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
