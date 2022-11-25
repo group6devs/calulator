@@ -130,6 +130,7 @@
                                                 <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </buttonConfiguration>
                                             <connections>
+                                                <action selector="onAddButton:" destination="IAM-ke-weo" eventType="touchUpInside" id="saY-UX-Hve"/>
                                                 <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAv-s5-Xzk"/>
                                             </connections>
                                         </button>

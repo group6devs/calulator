@@ -13,9 +13,13 @@ import Alamofire
 class HomeTableViewController: UITableViewController {
     
     var foodArray = [[String: Any?]]()
+    var foodNameVal = ""
+    var caloriesVal = ""
     
     let searchController = UISearchController()
     
+    var posts = [PFObject]()
+    var selectedPost : PFObject!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -68,15 +72,19 @@ class HomeTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath) as! FoodCellTableViewCell
       
         if(foodArray.count > 0) {
-            cell.foodName.text = (foodArray[indexPath.row]["food_name"] as? String)
-            cell.calories.text = (foodArray[indexPath.row]["nf_calories"] as? String)
+            foodNameVal = (foodArray[indexPath.row]["food_name"] as? String ?? "nil")
+            caloriesVal = (foodArray[indexPath.row]["nf_calories"] as? String ?? "nil")
+            
+            cell.foodName.text = foodNameVal
+            cell.calories.text = caloriesVal
             
         }
         
         
-        
         return cell
     }
+    
+    
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -87,8 +95,39 @@ class HomeTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 20
     }
+    
 
+    @IBAction func onAddButton(_ sender: Any) {
 
+        let logs = PFObject(className: "Logs")
+        
+        var superview = (sender as AnyObject).superview
+        while let view = superview, !(view is UITableViewCell) {
+            superview = view?.superview }
+        guard let cell = superview as? UITableViewCell else {
+            print("button is not contained in a table view cell")
+            return
+            
+        }
+        guard let indexPath = tableView.indexPath(for: cell) else {
+            print("failed to get index path for cell containing button")
+            return
+            
+        }
+        
+        
+        logs["FoodName"] = (foodArray[indexPath.row]["food_name"] as? String ?? "nil")
+        
+        logs["Calories"] = (foodArray[indexPath.row]["nf_calories"] as? String ?? "nil")
+        logs.saveInBackground { (success, error) in
+            if success {
+                print("Saved")
+            } else {
+                print("Error")
+            }
+            
+        }
+    }
     
     
     @IBAction func onLogoutButton(_ sender: Any) {
