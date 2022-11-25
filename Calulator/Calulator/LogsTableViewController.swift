@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Parse
 
 class LogsTableViewController: UITableViewController {
+    var logs = [PFObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()

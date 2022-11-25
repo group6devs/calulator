@@ -115,7 +115,7 @@ class HomeTableViewController: UITableViewController {
             
         }
         
-        
+        logs["user"] = PFUser.current()!
         logs["FoodName"] = (foodArray[indexPath.row]["food_name"] as? String ?? "nil")
         
         logs["Calories"] = (foodArray[indexPath.row]["nf_calories"] as? String ?? "nil")
