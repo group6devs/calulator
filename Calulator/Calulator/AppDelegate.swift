@@ -23,10 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let parseConfig = ParseClientConfiguration {
-                    $0.applicationId = "JsqqdShpG8SoIu3VCJSXRmXEVnoQmGpzZ5ksuVd1" // <- UPDATED
-                    $0.clientKey = "t1Prr9wMW1JnBxe3BRBVEtWrEPIeJVk4O1kZi15F" // <- UPDATED
-                    $0.server = "https://parseapi.back4app.com"
-            }
+            
+            //Uncomment these 2 lines and comment the others line to switch back to group app.
+                    //$0.applicationId = "JsqqdShpG8SoIu3VCJSXRmXEVnoQmGpzZ5ksuVd1" // <- UPDATED
+                    //$0.clientKey = "t1Prr9wMW1JnBxe3BRBVEtWrEPIeJVk4O1kZi15F" // <- UPDATED
+            
+            //Huy Le Key of Back4App for testing Purpose.
+                                $0.applicationId = "0GvHpu4UJlomCUa1C8Q96EroRVv4dQkFdPBhtIjR"
+                               $0.clientKey = "5zaw3MN2hcy5OFJNaa3l3jKzZyzcli8qW499CQYu"
+                               $0.server = "https://parseapi.back4app.com"
+            
+        }
             Parse.initialize(with: parseConfig)
         
         FatSecretCredentials.setConsumerKey(Constants.apiKey)
