@@ -4,6 +4,11 @@
 //
 //  Created by Dunyagozel Durdyyeva on 11/21/22.
 //
+// NOTED to TEAM: DO NOT USE THIS FILE,
+//I (Huy) leave it there just in case we need anything from this.
+//This file is consider depricated.
+//*******************
+
 
 import UIKit
 import Parse
@@ -11,9 +16,13 @@ import Parse
 class LogsTableViewController: UITableViewController {
     var logs = [PFObject]()
 
+    //This file is consider depricated.
+    //*******************
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.reloadData()
+        tableView.dataSource = self
+        tableView.delegate = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -28,11 +37,18 @@ class LogsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "Row: 1"
+        return cell
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 10
     }
+    
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

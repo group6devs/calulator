@@ -1,19 +1,16 @@
 //
-//  FoodCellTableViewCell.swift
+//  LogsCell.swift
 //  Calulator
 //
-//  Created by Dunyagozel Durdyyeva on 11/21/22.
+//  Created by Huy Le on 11/25/22.
 //
 
 import UIKit
 
-class FoodCellTableViewCell: UITableViewCell {
+class LogsCell: UITableViewCell {
     
-    @IBOutlet weak var foodName: UILabel!
-    @IBOutlet weak var addFoodButton: UIButton!
-    @IBOutlet weak var calories: UILabel!
-    
-    
+    @IBOutlet weak var foodNameLog: UILabel!
+    @IBOutlet weak var caloriesLog: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
