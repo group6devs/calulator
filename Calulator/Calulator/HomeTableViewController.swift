@@ -76,7 +76,7 @@ class HomeTableViewController: UITableViewController {
             caloriesVal = (foodArray[indexPath.row]["nf_calories"] as? String ?? "nil")
             
             cell.foodName.text = foodNameVal
-            cell.calories.text = caloriesVal
+            cell.calories.text = caloriesVal + " kcal"
             
         }
         
