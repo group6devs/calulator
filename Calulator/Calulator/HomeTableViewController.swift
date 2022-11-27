@@ -14,7 +14,7 @@ class HomeTableViewController: UITableViewController {
     
     var foodArray = [[String: Any?]]()
     var foodNameVal = ""
-    var caloriesVal = ""
+    var caloriesVal = Int()
     
     let searchController = UISearchController()
     
@@ -73,10 +73,10 @@ class HomeTableViewController: UITableViewController {
       
         if(foodArray.count > 0) {
             foodNameVal = (foodArray[indexPath.row]["food_name"] as? String ?? "nil")
-            caloriesVal = (foodArray[indexPath.row]["nf_calories"] as? String ?? "nil")
+            caloriesVal = (foodArray[indexPath.row]["nf_calories"] as? Int ?? 0)
             
             cell.foodName.text = foodNameVal
-            cell.calories.text = caloriesVal
+            cell.calories.text = String(caloriesVal)
             
         }
         
@@ -118,7 +118,7 @@ class HomeTableViewController: UITableViewController {
         logs["user"] = PFUser.current()!
         logs["FoodName"] = (foodArray[indexPath.row]["food_name"] as? String ?? "nil")
         
-        logs["Calories"] = (foodArray[indexPath.row]["nf_calories"] as? String ?? "nil")
+        logs["Calories"] = String((foodArray[indexPath.row]["nf_calories"] as? Int ?? 0))
         logs.saveInBackground { (success, error) in
             if success {
                 print("Saved")
