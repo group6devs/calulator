@@ -26,7 +26,7 @@ class LogsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "LogsCell") as! LogsCell
         let eachLog = logs[indexPath.row]
         cell.foodNameLog.text = eachLog["FoodName"] as! String
-        cell.caloriesLog.text = eachLog["Calories"] as! String + " kcal"
+        cell.caloriesLog.text = eachLog["Calories"] as! String
         
         return cell
     }

@@ -14,8 +14,8 @@
             filePath = "Calulator/HomeTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "HomeTableViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -50,54 +50,6 @@
             endingLineNumber = "27"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "192CAA3A-49E0-41C4-9CA8-F62F85E8DE7E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Calulator/HomeTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "192CAA3A-49E0-41C4-9CA8-F62F85E8DE7E - 7262a07e4642940a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Calulator.HomeTableViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
-                  moduleName = "Calulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dunyagozeldurdyyeva/Documents/School/FinalProj/Untitled/Calulator/Calulator/HomeTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "1092">
-               </Location>
-               <Location
-                  uuid = "192CAA3A-49E0-41C4-9CA8-F62F85E8DE7E - 7262a07e4642940a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Calulator.HomeTableViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
-                  moduleName = "Calulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dunyagozeldurdyyeva/Documents/School/FinalProj/Untitled/Calulator/Calulator/HomeTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "1216">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
