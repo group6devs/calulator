@@ -384,6 +384,7 @@
                     <navigationItem key="navigationItem" id="MsV-IO-Plt"/>
                     <connections>
                         <outlet property="tableView" destination="U6S-tu-GRX" id="kOY-c3-2Yi"/>
+                        <outlet property="totalCals" destination="nYP-Zl-ilC" id="5XO-AI-uXK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yY2-Fd-hjP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

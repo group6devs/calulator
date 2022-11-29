@@ -11,11 +11,12 @@ import Parse
 class LogsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    
+    @IBOutlet weak var totalCals: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    var logs = [PFObject]()
-
     
+    
+    var logs = [PFObject]()
+    var total = Int()
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,6 +28,8 @@ class LogsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let eachLog = logs[indexPath.row]
         cell.foodNameLog.text = eachLog["FoodName"] as! String
         cell.caloriesLog.text = eachLog["Calories"] as! String
+        total = total + Int(eachLog["Calories"] as! String)! ?? 0
+        totalCals.text = String(total)
         
         return cell
     }
@@ -36,6 +39,7 @@ class LogsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let query = PFQuery(className: "Logs")
         query.includeKey("user")
         query.limit = 20
+        total = 0
         query.findObjectsInBackground{ (logs, error) in
             if logs != nil {
                 self.logs = logs!
