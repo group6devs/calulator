@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B557310A0C05F0B879E46A4 /* Pods_Calulator_CalulatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB91F2FBDDF0096CF0443B88 /* Pods_Calulator_CalulatorUITests.framework */; };
+		68EAE7022931733900B03361 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EAE7012931733900B03361 /* LogsViewController.swift */; };
+		68EAE7042931794C00B03361 /* LogsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EAE7032931794C00B03361 /* LogsCell.swift */; };
 		852875C0CD6DA48C89DDCDAC /* Pods_CalulatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1721FD02DBAE0CCBC56F92B /* Pods_CalulatorTests.framework */; };
 		DADBF5FAC8E90A9EC50A845A /* Pods_Calulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77A2A8803311A364161C23F /* Pods_Calulator.framework */; };
 		EA0F4694291B59D100922B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F4693291B59D100922B4E /* AppDelegate.swift */; };
@@ -19,6 +21,8 @@
 		EA0F46B5291B59D200922B4E /* CalulatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46B4291B59D200922B4E /* CalulatorUITests.swift */; };
 		EA0F46B7291B59D200922B4E /* CalulatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */; };
 		EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */; };
+		EA15ED22292C7C1400391490 /* FoodCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA15ED21292C7C1400391490 /* FoodCellTableViewCell.swift */; };
+		EA6493BE292EB35E00457D91 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EA6493BD292EB35E00457D91 /* Alamofire */; };
 		EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */; };
 		EAE6ED25292C585D00F113CA /* LogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6ED24292C585D00F113CA /* LogsTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +47,8 @@
 /* Begin PBXFileReference section */
 		162DB77363C17735377181B3 /* Pods-Calulator-CalulatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator-CalulatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Calulator-CalulatorUITests/Pods-Calulator-CalulatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B888E4243A28E90A840757F /* Pods-CalulatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalulatorTests.debug.xcconfig"; path = "Target Support Files/Pods-CalulatorTests/Pods-CalulatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		68EAE7012931733900B03361 /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
+		68EAE7032931794C00B03361 /* LogsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsCell.swift; sourceTree = "<group>"; };
 		AB91F2FBDDF0096CF0443B88 /* Pods_Calulator_CalulatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calulator_CalulatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC4CE832696DCDCED94D5F2 /* Pods-Calulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator.debug.xcconfig"; path = "Target Support Files/Pods-Calulator/Pods-Calulator.debug.xcconfig"; sourceTree = "<group>"; };
 		CFAC9302748F028693F4686B /* Pods-Calulator-CalulatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calulator-CalulatorUITests.release.xcconfig"; path = "Target Support Files/Pods-Calulator-CalulatorUITests/Pods-Calulator-CalulatorUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 		EA0F46B4291B59D200922B4E /* CalulatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorUITests.swift; sourceTree = "<group>"; };
 		EA0F46B6291B59D200922B4E /* CalulatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EA15ED21292C7C1400391490 /* FoodCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCellTableViewCell.swift; sourceTree = "<group>"; };
 		EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		EAE6ED1D2925E94400F113CA /* FatSecretSwift-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "FatSecretSwift-master"; sourceTree = "<group>"; };
 		EAE6ED1E2925E9B300F113CA /* FatSecretSwift-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "FatSecretSwift-master"; sourceTree = "<group>"; };
@@ -75,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADBF5FAC8E90A9EC50A845A /* Pods_Calulator.framework in Frameworks */,
+				EA6493BE292EB35E00457D91 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +160,12 @@
 				EA0F469C291B59D200922B4E /* Assets.xcassets */,
 				EA0F469E291B59D200922B4E /* LaunchScreen.storyboard */,
 				EA0F46A1291B59D200922B4E /* Info.plist */,
+				68EAE7012931733900B03361 /* LogsViewController.swift */,
+				68EAE7032931794C00B03361 /* LogsCell.swift */,
 				EA0F46C3291B5D8E00922B4E /* LoginViewController.swift */,
 				EAC3A1142925BF9800BB1113 /* HomeTableViewController.swift */,
 				EAE6ED24292C585D00F113CA /* LogsTableViewController.swift */,
+				EA15ED21292C7C1400391490 /* FoodCellTableViewCell.swift */,
 			);
 			path = Calulator;
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 			);
 			name = Calulator;
 			packageProductDependencies = (
+				EA6493BD292EB35E00457D91 /* Alamofire */,
 			);
 			productName = Calulator;
 			productReference = EA0F4690291B59D100922B4E /* Calulator.app */;
@@ -281,6 +293,7 @@
 			);
 			mainGroup = EA0F4687291B59D100922B4E;
 			packageReferences = (
+				EA6493BC292EB35E00457D91 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = EA0F4691291B59D100922B4E /* Products */;
 			projectDirPath = "";
@@ -429,10 +442,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC3A1152925BF9800BB1113 /* HomeTableViewController.swift in Sources */,
+				EA15ED22292C7C1400391490 /* FoodCellTableViewCell.swift in Sources */,
 				EA0F46C4291B5D8E00922B4E /* LoginViewController.swift in Sources */,
 				EA0F4694291B59D100922B4E /* AppDelegate.swift in Sources */,
 				EAE6ED25292C585D00F113CA /* LogsTableViewController.swift in Sources */,
 				EA0F4696291B59D100922B4E /* SceneDelegate.swift in Sources */,
+				68EAE7042931794C00B03361 /* LogsCell.swift in Sources */,
+				68EAE7022931733900B03361 /* LogsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,6 +796,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA6493BC292EB35E00457D91 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA6493BD292EB35E00457D91 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA6493BC292EB35E00457D91 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA0F4688291B59D100922B4E /* Project object */;
 }
