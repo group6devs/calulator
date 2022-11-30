@@ -35,9 +35,9 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
 - [x] Logs Screen UI
 - [x] App icon
 - [x] Tab navigation (Home screen | Logs screen)
-- [ ] Display api retrieved items 
-- [ ] Add button functionality
-- [ ] Total consumed calories calculation functionality
+- [x] Display api retrieved items 
+- [x] Add button functionality
+- [x] Total consumed calories calculation functionality
 
 **Optional Nice-to-have Stories**
 
@@ -127,3 +127,6 @@ Here's a walkthrough of implemented user stories:
 * Sprint 2
 
 <img src='https://media.giphy.com/media/mLC0dZBv0BR9zRe6CT/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+* Sprint 3
+<img src='http://g.recordit.co/SR7JGeg9k5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
