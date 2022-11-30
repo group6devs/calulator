@@ -62,7 +62,40 @@ class LogsViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    @IBAction func onRemoveButton(_ sender: Any) {
+        
+        var superview = (sender as AnyObject).superview
+            while let view = superview, !(view is UITableViewCell) {
+                    superview = view?.superview }
+                guard let cell = superview as? UITableViewCell else {
+                    print("button is not contained in a table view cell")
+                    return
+                    
+                }
+                guard let indexPath = tableView.indexPath(for: cell) else {
+                    print("failed to get index path for cell containing button")
+                    return
+                    
+                }
+    
+                var removeLog = [PFObject]()
+                removeLog = [logs[indexPath.row]]
 
+                PFObject.deleteAll(inBackground: (removeLog)) { (sucess, error) in
+                    if (sucess){
+                        print("Removed")
+                    } else{
+                        print("Error")
+                        
+                    }
+                    
+                }
+
+        
+    }
+    
     /*
     // MARK: - Navigation
 
