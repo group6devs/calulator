@@ -38,6 +38,7 @@ An app that helps to track nutrition. Calulator can help to reach and maintain w
 - [x] Display api retrieved items 
 - [x] Add button functionality
 - [x] Total consumed calories calculation functionality
+- [x] Remove button in logs screen
 
 **Optional Nice-to-have Stories**
 
