@@ -131,3 +131,6 @@ Here's a walkthrough of implemented user stories:
 
 * Sprint 3
 <img src='http://g.recordit.co/SR7JGeg9k5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+* Sprint just 4 
+<img src='http://g.recordit.co/qLzFVm2K26.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
